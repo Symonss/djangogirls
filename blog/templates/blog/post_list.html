@@ -14,11 +14,11 @@
 </div>
 
 {% for post in posts %}
-    <div class="w3-card" style="width:50%;">
+    <div class="w3-card" style="width:98%;">
 
         <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <p class="w3-container"><b >Published by: {{ post.author }}</b>    <i> On: {{ post.published_date }}</i></p>
+        <p class="w3-container">{{ post.text|linebreaksbr }}</p>
+        <p ><b >Published by: {{ post.author }}</b>    <i> On: {{ post.published_date }}</i></p>
     </div>
 {% endfor %}
 
